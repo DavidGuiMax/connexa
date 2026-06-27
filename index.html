@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CONNEXA — Encontre oportunidades perto de você</title>
+<meta name="description" content="Vagas, estágios, cursos, eventos e negócios locais de São Bernardo do Campo em um único lugar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container site-header-div">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Connexa">
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <ul class="main-nav__list">
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="pages/oportunidades.html">Oportunidades</a></li>
+        <li><a href="pages/cursos.html">Cursos</a></li>
+        <li><a href="pages/eventos.html">Eventos</a></li>
+        <li><a href="pages/negocios.html">Negócios</a></li>
+        <li><a href="pages/sobre.html">Sobre</a></li>
+        <li><a href="pages/contato.html">Contato</a></li>
+      </ul>
+      <div class="header-actions in-nav">
+        <a href="./pages/login.html" class="btn btn--ghost btn--sm">Entrar</a>
+        <a href="./pages/cadastro.html" class="btn btn--primary btn--sm">Cadastrar empresa</a>
+      </div>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero__network" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g>
+        <line x1="120" y1="120" x2="320" y2="80"/>
+        <line x1="320" y1="80" x2="540" y2="160"/>
+        <line x1="540" y1="160" x2="760" y2="90"/>
+        <line x1="760" y1="90" x2="980" y2="150"/>
+        <line x1="120" y1="120" x2="220" y2="300"/>
+        <line x1="220" y1="300" x2="420" y2="260"/>
+        <line x1="420" y1="260" x2="540" y2="160"/>
+        <line x1="420" y1="260" x2="640" y2="380"/>
+        <line x1="640" y1="380" x2="760" y2="90"/>
+        <line x1="640" y1="380" x2="860" y2="420"/>
+        <line x1="860" y1="420" x2="980" y2="150"/>
+        <line x1="980" y1="150" x2="1100" y2="320"/>
+        <line x1="220" y1="300" x2="160" y2="480"/>
+        <line x1="640" y1="380" x2="520" y2="520"/>
+        <line x1="860" y1="420" x2="950" y2="540"/>
+      </g>
+      <g>
+        <circle class="node-dim" cx="120" cy="120" r="4"/>
+        <circle class="node-dim" cx="320" cy="80" r="3.5"/>
+        <circle class="node-dim" cx="220" cy="300" r="4"/>
+        <circle class="node-dim" cx="420" cy="260" r="3.5"/>
+        <circle class="node-dim" cx="760" cy="90" r="3.5"/>
+        <circle class="node-dim" cx="980" cy="150" r="4"/>
+        <circle class="node-dim" cx="1100" cy="320" r="3.5"/>
+        <circle class="node-dim" cx="160" cy="480" r="3.5"/>
+        <circle class="node-dim" cx="520" cy="520" r="3.5"/>
+        <circle class="node-dim" cx="950" cy="540" r="3.5"/>
+        <circle class="pulse" cx="540" cy="160" r="4"/>
+        <circle class="pulse" cx="640" cy="380" r="4"/>
+        <circle class="pulse" cx="860" cy="420" r="4"/>
+      </g>
+    </svg>
+
+    <div class="container hero__content">
+      <span class="hero__eyebrow">São Bernardo do Campo · Rede de oportunidades</span>
+      <h1 class="hero__title">Encontre <span class="accent">oportunidades</span> perto de você.</h1>
+      <p class="hero__subtitle">Cursos, vagas, eventos e negócios locais em um único lugar.</p>
+
+      <form class="search-bar search-bar--page" data-search-redirect="pages/oportunidades.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" placeholder="Encontrar Oportunidades..." aria-label="Buscar oportunidades">
+        <button type="submit" class="btn btn--primary">Buscar</button>
+      </form>
+
+      <div class="hero__actions">
+        <a href="pages/oportunidades.html" class="btn btn--primary">Encontrar Vagas</a>
+        <a href="pages/cursos.html" class="btn btn--outline-light">Explorar Cursos</a>
+      </div>
+
+      <div class="quick-categories">
+        <a href="pages/eventos.html">📅 Eventos</a>
+        <a href="pages/negocios.html">🏘️ Negócios locais</a>
+        <a href="pages/cursos.html">🎓 Cursos</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat"><span class="stat__num">350+</span><span class="stat__label">oportunidades ativas</span></div>
+        <div class="stat"><span class="stat__num">120</span><span class="stat__label">negócios locais</span></div>
+        <div class="stat"><span class="stat__num">40</span><span class="stat__label">eventos por ano</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPORTUNIDADES -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="section__eyebrow">Vagas e estágios</span>
+          <h2 class="section__title">Oportunidades em alta na sua região</h2>
+        </div>
+        <a href="pages/oportunidades.html" class="link-arrow">Ver todas as oportunidades →</a>
+      </div>
+      <div class="scroll-row" data-row="vagas" style="--card-w:300px"></div>
+    </div>
+  </section>
+
+  <!-- CURSOS -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="section__eyebrow">Capacitação</span>
+          <h2 class="section__title">Cursos para impulsionar sua carreira</h2>
+        </div>
+        <a href="pages/cursos.html" class="link-arrow">Ver todos os cursos →</a>
+      </div>
+      <div class="scroll-row" data-row="cursos"></div>
+    </div>
+  </section>
+
+  <!-- EVENTOS -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="section__eyebrow">Agenda local</span>
+          <h2 class="section__title">Eventos, workshops e feiras</h2>
+        </div>
+        <a href="pages/eventos.html" class="link-arrow">Ver agenda completa →</a>
+      </div>
+      <div class="grid grid--3" data-row="eventos"></div>
+    </div>
+  </section>
+
+  <!-- NEGÓCIOS LOCAIS -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="section__eyebrow">Comunidade empreendedora</span>
+          <h2 class="section__title">Negócios locais para descobrir</h2>
+        </div>
+        <a href="pages/negocios.html" class="link-arrow">Explorar negócios →</a>
+      </div>
+      <div class="grid grid--4" data-row="negocios"></div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="section__eyebrow">Como funciona</span>
+          <h2 class="section__title">Da busca à conexão real</h2>
+        </div>
+      </div>
+      <div class="how-row">
+        <div class="how-item">
+          <span class="how-item__index">01</span>
+          <h3 class="how-item__title">Você busca</h3>
+          <p class="how-item__desc">Procure vagas, cursos, eventos ou negócios da sua região.</p>
+        </div>
+        <div class="how-item">
+          <span class="how-item__index">02</span>
+          <h3 class="how-item__title">Você filtra</h3>
+          <p class="how-item__desc">Refine por área, modalidade, localização ou preço.</p>
+        </div>
+        <div class="how-item">
+          <span class="how-item__index">03</span>
+          <h3 class="how-item__title">Você se conecta</h3>
+          <p class="how-item__desc">Fale direto com empresas, instituições e empreendedores.</p>
+        </div>
+        <div class="how-item">
+          <span class="how-item__index">04</span>
+          <h3 class="how-item__title">Você cresce</h3>
+          <p class="how-item__desc">Ganha experiência, renda ou novos contatos na comunidade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA EMPRESAS -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-empresas">
+        <div>
+          <span class="hero__eyebrow" style="color:#8549BB">Para empresas e instituições</span>
+          <h2 class="cta-empresas__title">Divulgue sua oportunidade</h2>
+          <p class="cta-empresas__desc">Alcance jovens, profissionais e empreendedores da região em poucos minutos.</p>
+          <a href="pages/cadastro.html" class="btn btn--primary">Cadastrar empresa</a>
+        </div>
+        <div class="publicar-grid">
+          <div class="card-publicar">
+            <div class="card-publicar__icon">💼</div>
+            <h3 class="card-publicar__titulo">Publicar vaga</h3>
+            <p class="card-publicar__desc">Anuncie vagas e estágios para a comunidade local.</p>
+          </div>
+          <div class="card-publicar">
+            <div class="card-publicar__icon">📅</div>
+            <h3 class="card-publicar__titulo">Publicar evento</h3>
+            <p class="card-publicar__desc">Divulgue workshops, feiras e encontros de networking.</p>
+          </div>
+          <div class="card-publicar">
+            <div class="card-publicar__icon">🎓</div>
+            <h3 class="card-publicar__titulo">Publicar curso</h3>
+            <p class="card-publicar__desc">Ofereça capacitação para jovens e profissionais.</p>
+          </div>
+          <div class="card-publicar">
+            <div class="card-publicar__icon">🏘️</div>
+            <h3 class="card-publicar__titulo">Divulgar negócio</h3>
+            <p class="card-publicar__desc">Mostre seu negócio local para toda a comunidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="newsletter">
+        <div>
+          <h3 class="newsletter__title">Receba oportunidades no seu e-mail</h3>
+          <p class="newsletter__desc">Um resumo semanal de vagas, cursos e eventos da sua região.</p>
+        </div>
+        <form data-search-redirect="" onsubmit="event.preventDefault(); this.querySelector('[data-feedback]').style.display='block';">
+          <input type="email" placeholder="seu@email.com" required aria-label="E-mail">
+          <button type="submit" class="btn btn--dark">Quero receber</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__top">
+    <div>
+      <div class="site-footer__brand">CONNEXA</div>
+      <p class="site-footer__tagline">Transformando conexões locais em oportunidades reais.</p>
+    </div>
+    <div>
+      <div class="site-footer__heading">Plataforma</div>
+      <div class="site-footer__list">
+        <a href="pages/oportunidades.html">Oportunidades</a>
+        <a href="pages/cursos.html">Cursos</a>
+        <a href="pages/eventos.html">Eventos</a>
+        <a href="pages/negocios.html">Negócios locais</a>
+      </div>
+    </div>
+    <div>
+      <div class="site-footer__heading">Connexa</div>
+      <div class="site-footer__list">
+        <a href="pages/sobre.html">Sobre nós</a>
+        <a href="pages/sobre.html#hub">Connexa Hub</a>
+        <a href="pages/contato.html">Contato</a>
+        <a href="pages/cadastro.html">Cadastrar empresa</a>
+      </div>
+    </div>
+    <div>
+      <div class="site-footer__heading">Contato</div>
+      <div class="site-footer__list">
+        <span>São Bernardo do Campo — SP</span>
+        <span>contato@connexa.com.br</span>
+        <span>(00) 0000-0000</span>
+      </div>
+    </div>
+  </div>
+  <div class="container site-footer__bottom">
+    <span>© <span data-year></span> Connexa. Todos os direitos reservados.</span>
+    <div class="site-footer__social">
+      <a href="#" aria-label="Instagram">in</a>
+      <a href="#" aria-label="LinkedIn">li</a>
+      <a href="#" aria-label="WhatsApp">wa</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

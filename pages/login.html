@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrar — CONNEXA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/pages.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container site-header-div">
+    <a href="index.html" class="brand">
+      <img src="../assets/logo.png" alt="Logo do site Connexa">
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <ul class="main-nav__list">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="oportunidades.html">Oportunidades</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="negocios.html">Negócios</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <div class="header-actions in-nav">
+        <a href="cadastro.html" class="btn btn--primary btn--sm">Cadastrar empresa</a>
+      </div>
+    </nav>
+    
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
+</header>
+
+<main id="conteudo">
+  <div class="auth-shell">
+    <div class="auth-card">
+      <div class="auth-card__logo brand">
+        <img src="../assets/logo.png" alt="">
+      </div>
+      <h1 class="auth-card__title">Bem-vindo de volta</h1>
+      <p class="auth-card__sub">Entre para acompanhar suas oportunidades.</p>
+
+      <form data-form="auth">
+        <div class="form-field">
+          <label for="login-email">E-mail</label>
+          <input type="email" id="login-email" required placeholder="seu@email.com">
+        </div>
+        <div class="form-field">
+          <label for="login-senha">Senha</label>
+          <input type="password" id="login-senha" required placeholder="••••••••">
+        </div>
+        <div class="form-row-between">
+          <label class="checkbox-row"><input type="checkbox"> Lembrar de mim</label>
+          <a href="#">Esqueci minha senha</a>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">Entrar</button>
+        <p data-feedback style="display:none; margin-top:1rem; color:var(--color-events); font-weight:600; font-size:0.88rem; text-align:center;"></p>
+      </form>
+
+      <div class="auth-card__divider">ou</div>
+      <button class="btn btn--ghost btn--block">Entrar com Google</button>
+
+      <p class="auth-card__foot">Não tem conta? <a href="cadastro.html">Cadastre-se gratuitamente</a></p>
+    </div>
+  </div>
+</main>
+
+<script src="../js/main.js"></script>
+<script src="../js/pages.js"></script>
+</body>
+</html>

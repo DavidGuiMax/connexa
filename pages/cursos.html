@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cursos — CONNEXA</title>
+<meta name="description" content="Cursos e capacitações gratuitas e pagas em São Bernardo do Campo e região.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/pages.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container site-header-div">
+    <a href="index.html" class="brand">
+      <img src="../assets/logo.png" alt="Logo do site Connexa">
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <ul class="main-nav__list">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="oportunidades.html">Oportunidades</a></li>
+        <li><a href="cursos.html" aria-current="page">Cursos</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="negocios.html">Negócios</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <div class="header-actions in-nav">
+        <a href="login.html" class="btn btn--ghost btn--sm">Entrar</a>
+        <a href="cadastro.html" class="btn btn--primary btn--sm">Cadastrar empresa</a>
+      </div>
+    </nav>
+    
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="page-header">
+    <div class="container">
+      <p class="page-header__crumb"><a href="../index.html">Início</a> / Cursos</p>
+      <h1 class="page-header__title">Cursos e capacitações</h1>
+      <p class="page-header__desc">Formação gratuita e paga para quem quer crescer profissionalmente na região.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="listing">
+
+        <aside class="filters">
+          <div class="filters__group">
+            <p class="filters__title">Área</p>
+            <label class="filters__option"><input type="checkbox" data-filter="area-curso" value="negocios"> Negócios</label>
+            <label class="filters__option"><input type="checkbox" data-filter="area-curso" value="tecnologia"> Tecnologia</label>
+            <label class="filters__option"><input type="checkbox" data-filter="area-curso" value="design"> Design</label>
+            <label class="filters__option"><input type="checkbox" data-filter="area-curso" value="marketing"> Marketing</label>
+          </div>
+          <div class="filters__group">
+            <p class="filters__title">Modalidade</p>
+            <label class="filters__option"><input type="checkbox" data-filter="modalidade-curso" value="online"> Online</label>
+            <label class="filters__option"><input type="checkbox" data-filter="modalidade-curso" value="presencial"> Presencial</label>
+            <label class="filters__option"><input type="checkbox" data-filter="modalidade-curso" value="hibrido"> Híbrido</label>
+          </div>
+          <div class="filters__group">
+            <p class="filters__title">Investimento</p>
+            <div class="filter-chip-row">
+              <button class="filter-chip is-active" data-chip="preco" data-value="todos">Todos</button>
+              <button class="filter-chip" data-chip="preco" data-value="gratuito">Gratuito</button>
+              <button class="filter-chip" data-chip="preco" data-value="pago">Pago</button>
+            </div>
+          </div>
+        </aside>
+
+        <div>
+          <div class="listing__results-head">
+            <p class="listing__count" data-count="cursos"><strong>8</strong> cursos encontrados</p>
+            <select class="sort-select" aria-label="Ordenar por">
+              <option>Mais recentes</option>
+              <option>Carga horária</option>
+            </select>
+          </div>
+          <div class="grid grid--3" data-grid="cursos"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__top">
+    <div>
+      <div class="site-footer__brand">CONNEXA</div>
+      <p class="site-footer__tagline">Transformando conexões locais em oportunidades reais.</p>
+    </div>
+    <div>
+      <div class="site-footer__heading">Plataforma</div>
+      <div class="site-footer__list">
+        <a href="oportunidades.html">Oportunidades</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="negocios.html">Negócios locais</a>
+      </div>
+    </div>
+    <div>
+      <div class="site-footer__heading">Connexa</div>
+      <div class="site-footer__list">
+        <a href="sobre.html">Sobre nós</a>
+        <a href="sobre.html#hub">Connexa Hub</a>
+        <a href="contato.html">Contato</a>
+        <a href="cadastro.html">Cadastrar empresa</a>
+      </div>
+    </div>
+    <div>
+      <div class="site-footer__heading">Contato</div>
+      <div class="site-footer__list">
+        <span>São Bernardo do Campo — SP</span>
+        <span>contato@connexa.com.br</span>
+        <span>(11) 4321-0099</span>
+      </div>
+    </div>
+  </div>
+  <div class="container site-footer__bottom">
+    <span>© <span data-year></span> Connexa. Todos os direitos reservados.</span>
+    <div class="site-footer__social">
+      <a href="#" aria-label="Instagram">in</a>
+      <a href="#" aria-label="LinkedIn">li</a>
+      <a href="#" aria-label="WhatsApp">wa</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/pages.js"></script>
+</body>
+</html>
