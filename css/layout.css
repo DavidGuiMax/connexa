@@ -20,7 +20,7 @@ main { display: block; }
   background: rgba(250, 248, 243, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-line);
-  overflow-x: clip;
+  overflow: hidden;
 }
 
 .site-header-div {
