@@ -14,7 +14,6 @@ main { display: block; }
 /* ---------- Header ---------- */
 
 .site-header {
-  overflow: hidden;
   position: sticky;
   top: 0;
   z-index: 100;
