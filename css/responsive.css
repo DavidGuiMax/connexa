@@ -121,7 +121,7 @@
 
 /* ---------- Small tablet / large phone (<= 768px) ---------- */
 @media (max-width: 768px) {
-  .grid--4, .grid--3, .grid--2 { grid-template-columns: repeat(2, 1fr); }
+  .grid--4, .grid--3, .grid--2 { grid-template-columns: repeat(1, 1fr); }
   .how-row { grid-template-columns: 1fr; }
   .publicar-grid { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: repeat(2, 1fr); }
